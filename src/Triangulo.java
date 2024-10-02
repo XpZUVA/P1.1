@@ -20,6 +20,16 @@ public class Triangulo {
         area = (int) Math.sqrt(s * (s - l1) * (s - l2) * (s - l3));
     }
 
+    public void tipoTriangulo(){
+        if(l1 == l2 && l2 == l3){
+            System.out.println("El triángulo es equilátero.");
+        } else if(l1 == l2 || l1 == l3 || l2 == l3){
+            System.out.println("El triángulo es isósceles.");
+        } else {
+            System.out.println("El triángulo es escaleno.");
+        }
+    }
+
 
     //GETTERS Y SETTERS
 
